@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  .page {
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(../../src/assets/header-background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px 100px;
+      color: white;
+      
+      .header-space{
+          margin: 45px 0 0 0;
+      }
+      .header-label{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .description{
+        font-size: 20px;
+    }
+      .socials{
+        display: flex;
+        list-style: none;
+        padding-left: 0em;
+        .social-button{
+            padding: 20px;
+            margin: 5px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        .linkedin{
+            background-image: url(../../src/assets/linkedin-icon.png);
+        }
+        .github{
+            background-image: url(../../src/assets/github-icon.svg);
+        }
+      }
+      .profile-pic{
+          background-image: url(../../src/assets/profile-pic.jpeg);
+          padding: 125px;
+          margin: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 50%;
+          border: 7px solid rgba(255, 255, 255, 0.749);
+      }
+      .contact-info{
+          padding-left: 0;
+          list-style: none;
+          display: flex;
+          .contact-info-item{
+            padding: 20px;
+          }
+      }
+
+    }
+    .page-content {
+        margin: 50px 100px;
+        display: flex;
+        flex-direction: column;
+      }
+    
+  }
+  
+}

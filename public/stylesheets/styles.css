@@ -1,7 +1,68 @@
-.header{
-  background-image: url(../../src/assets/header-background.jpg);
-}
-body{
+body {
   margin: 0;
+  background-color: #292929;
+  color: white;
 }
+body .page .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../src/assets/header-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 100px;
+  color: white;
+}
+body .page .header .header-space {
+  margin: 45px 0 0 0;
+}
+body .page .header .header-label {
+  font-size: 45px;
+  font-weight: bold;
+}
+body .page .header .description {
+  font-size: 20px;
+}
+body .page .header .socials {
+  display: flex;
+  list-style: none;
+  padding-left: 0em;
+}
+body .page .header .socials .social-button {
+  padding: 20px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+body .page .header .socials .linkedin {
+  background-image: url(../../src/assets/linkedin-icon.png);
+}
+body .page .header .socials .github {
+  background-image: url(../../src/assets/github-icon.svg);
+}
+body .page .header .profile-pic {
+  background-image: url(../../src/assets/profile-pic.jpeg);
+  padding: 125px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 7px solid rgba(255, 255, 255, 0.749);
+}
+body .page .header .contact-info {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+body .page .header .contact-info .contact-info-item {
+  padding: 20px;
+}
+body .page .page-content {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */
