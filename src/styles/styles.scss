@@ -1,11 +1,13 @@
 @import 'images';
 $blue: rgb(32, 166, 189);
 $border: 2px solid rgba(255, 255, 255, 0.29);
-
+$mainBackground: rgb(33, 33, 33);
+$profileBorder: 7px solid rgba(255, 255, 255, 0.749);
+$pageMargin: 50px 100px;
 
 body {
   margin: 0;
-  background-color: rgb(33, 33, 33);
+  background-color: $mainBackground;
   color: white;
   .page {
     .header {
@@ -48,7 +50,8 @@ body {
         margin: 20px;
         @include imageStyling();
         border-radius: 50%;
-        border: 7px solid rgba(255, 255, 255, 0.749);
+        border-bottom: $profileBorder;
+        
       }
       .contact-info {
         padding-left: 0;
@@ -60,7 +63,7 @@ body {
       }
     }
     .page-content {
-      margin: 50px 100px;
+      margin: $pageMargin;
       display: flex;
       flex-direction: column;
     }
