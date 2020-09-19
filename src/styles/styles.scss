@@ -1,3 +1,5 @@
+$blue: rgb(32, 166, 189);
+
 body {
   margin: 0;
   background-color: rgb(33, 33, 33);
@@ -84,12 +86,11 @@ body {
         border-right: 2px solid rgba(255, 255, 255, 0.29);
       }
       .list-head {
-        list-style: none;
-        font-weight: bold;
+        @extend .list-emp;
         font-style: italic;
       }
       .list-emp{
-        list-style: none;
+        @extend .list-date;
         font-weight: bold;
       }
       .list-date{
@@ -98,10 +99,10 @@ body {
 
     }
     .label{
-      color: rgb(32, 166, 189);
+      color: $blue;
     }
     .box {
-      border: 2px solid rgb(32, 166, 189);
+      border: 2px solid $blue;
       display: inline-block;
       padding: 7px;
     }
