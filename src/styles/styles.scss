@@ -1,4 +1,7 @@
+@import 'images';
 $blue: rgb(32, 166, 189);
+$border: 2px solid rgba(255, 255, 255, 0.29);
+
 
 body {
   margin: 0;
@@ -10,8 +13,7 @@ body {
       flex-direction: column;
       align-items: center;
       background-image: url(../../src/assets/header-background.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
+      @include imageStyling();
       padding: 20px 100px;
 
       .header-space {
@@ -31,9 +33,7 @@ body {
         .social-button {
           padding: 20px;
           margin: 5px;
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
+          @include imageStyling();
         }
         .linkedin {
           background-image: url(../../src/assets/linkedin-icon.png);
@@ -46,9 +46,7 @@ body {
         background-image: url(../../src/assets/profile-pic.jpeg);
         padding: 125px;
         margin: 20px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        @include imageStyling();
         border-radius: 50%;
         border: 7px solid rgba(255, 255, 255, 0.749);
       }
@@ -67,7 +65,7 @@ body {
       flex-direction: column;
     }
     .bottom-border {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.29);
+      border-bottom: $border;
     }
     .skills {
       display: inline-flex;
@@ -79,11 +77,11 @@ body {
       flex-direction: row-reverse;
       .experience {
         padding-left: 20px;
-        border-left: 2px solid rgba(255, 255, 255, 0.29);
+        border-left: $border;
       }
       .education {
         padding-right: 20px;
-        border-right: 2px solid rgba(255, 255, 255, 0.29);
+        border-right: $border;
       }
       .list-head {
         @extend .list-emp;
